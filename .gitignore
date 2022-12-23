@@ -1,0 +1,12 @@
+.gradle/
+build/
+*.iml
+.idea/modules
+.idea/libraries
+.idea/modules.xml
+.idea/gradle.xml
+.idea/compiler.xml
+.idea/jarRepositories.xml
+.idea/misc.xml
+.idea/vcs.xml
+local.properties
