@@ -6,7 +6,6 @@ package org.deafsapps.kpdatastructuresandalgorithms
  * - Constant time insertion and removal from the front of the list.
  * - Reliable performance characteristics.
  */
-
 class LinkedList<T : Any> {
 
     private var head: Node<T>? = null
