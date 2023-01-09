@@ -53,7 +53,7 @@ class StackImpl<T : Any> : Stack<T> {
             }
 
         fun <T : Any> stackOf(vararg elements: T): Stack<T> =
-            StackImpl.create(elements.asList())
+            create(elements.asList())
     }
 
 }

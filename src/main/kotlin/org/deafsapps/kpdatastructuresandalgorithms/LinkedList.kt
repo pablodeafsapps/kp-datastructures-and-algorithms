@@ -28,7 +28,7 @@ class LinkedList<T : Any> {
         size++
     }
 
-    fun append(value: T) : LinkedList<T> = apply {
+    fun append(value: T): LinkedList<T> = apply {
         if (isEmpty()) {
             push(value)
             return@apply
