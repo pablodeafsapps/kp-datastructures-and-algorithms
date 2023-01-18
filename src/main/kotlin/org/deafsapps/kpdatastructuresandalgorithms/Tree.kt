@@ -1,6 +1,6 @@
 package org.deafsapps.kpdatastructuresandalgorithms
 
-typealias Visitor<T> = (Tree.Node<T>) -> Unit
+typealias tVisitor<T> = (Tree.Node<T>) -> Unit
 
 class Tree {
 
@@ -10,12 +10,12 @@ class Tree {
 
         fun add(child: Node<T>) = children.add(child)
 
-        fun forEachDepthFirst(visit: Visitor<T>) {
+        fun forEachDepthFirst(visit: tVisitor<T>) {
             visit(this)
             children.forEach { it.forEachDepthFirst(visit) }
         }
 
-        fun forEachLevelOrder(visit: Visitor<T>) {
+        fun forEachLevelOrder(visit: tVisitor<T>) {
             visit(this)
             val queue: Queue<Node<T>> = ArrayListQueue()
             children.forEach { queue.enqueue(it) }
