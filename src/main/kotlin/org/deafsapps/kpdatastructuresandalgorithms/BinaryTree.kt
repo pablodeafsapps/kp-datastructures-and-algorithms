@@ -6,11 +6,26 @@ typealias btVisitor<T> = (T?) -> Unit
 
 class BinaryTree {
 
-    class Node<T>(val value: T) {
+    class Node<T>(var value: T) {
         var leftChild: Node<T>? = null
         var rightChild: Node<T>? = null
+        // Gets the minimum-value 'Node' recursively, which is that 'Node' whose 'leftChild' property is 'null'
+        val min: Node<T>
+            get() = leftChild?.min ?: this
 
         override fun toString(): String = diagram(this)
+
+        /**
+         * Override equals() to check whether two binary search trees are equal.
+         */
+        override fun equals(other: Any?): Boolean =
+            if (other != null && other is Node<*>) {
+                this.value == other.value &&
+                        this.leftChild == other.leftChild &&
+                        this.rightChild == other.rightChild
+            } else {
+                false
+            }
 
         fun traverseInOrder(visit: btVisitor<T>) {
             leftChild?.traverseInOrder(visit = visit)
