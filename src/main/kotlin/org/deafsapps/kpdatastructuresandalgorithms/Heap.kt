@@ -191,19 +191,19 @@ abstract class AbstractHeap<T : Any>() : Heap<T> {
 
 }
 
-class ComparableHeapImplOne<T : Comparable<T>> : AbstractHeap<T>() {
+class ComparableHeapImpl<T : Comparable<T>> : AbstractHeap<T>() {
 
     override fun compare(a: T, b: T): Int = a.compareTo(b)
 
     companion object {
         fun <T : Comparable<T>> create(
             elements: ArrayList<T>
-        ): Heap<T> = ComparableHeapImplOne<T>().apply { heapify(values = elements) }
+        ): Heap<T> = ComparableHeapImpl<T>().apply { heapify(values = elements) }
     }
 
 }
 
-class ComparableHeapImplTwo<T : Any>(
+class ComparatorHeapImpl<T : Any>(
     private val comparator: Comparator<T>
 ) : AbstractHeap<T>() {
 
@@ -213,7 +213,7 @@ class ComparableHeapImplTwo<T : Any>(
         fun <T : Comparable<T>> create(
             elements: ArrayList<T>,
             comparator: Comparator<T>
-        ): Heap<T> = ComparableHeapImplTwo<T>(comparator = comparator).apply { heapify(values = elements) }
+        ): Heap<T> = ComparatorHeapImpl(comparator = comparator).apply { heapify(values = elements) }
     }
 
 }
@@ -224,7 +224,7 @@ class ComparableHeapImplTwo<T : Any>(
 fun getNthSmallestElement(n: Int, elements: ArrayList<Int>): Int? {
     if (n <= 0 || elements.isEmpty()) return null
 
-    val heap = ComparableHeapImplOne.create(elements = arrayListOf<Int>())
+    val heap = ComparableHeapImpl.create(elements = arrayListOf<Int>())
 
     elements.forEach {  e ->
         val maxElement: Int? = heap.peek()
@@ -241,7 +241,7 @@ fun getNthSmallestElement(n: Int, elements: ArrayList<Int>): Int? {
 fun main() {
     // Maxn-heap example
     val array1: ArrayList<Int> = arrayListOf(1, 12, 3, 4, 1, 6, 8, 7)
-    val priorityQueue = ComparableHeapImplOne.create(elements = array1)
+    val priorityQueue = ComparableHeapImpl.create(elements = array1)
     while (!priorityQueue.isEmpty) {
         println(priorityQueue.remove())
     }
@@ -249,7 +249,7 @@ fun main() {
     // Min-heap example
     val array2: ArrayList<Int> = arrayListOf(1, 12, 3, 4, 1, 6, 8, 7)
     val inverseComparator: Comparator<Int> = Comparator { o1, o2 -> o2.compareTo(o1) }
-    val minHeap = ComparableHeapImplTwo.create(elements = array2, comparator = inverseComparator)
+    val minHeap = ComparatorHeapImpl.create(elements = array2, comparator = inverseComparator)
     while (!minHeap.isEmpty) {
         println(minHeap.remove())
     }
