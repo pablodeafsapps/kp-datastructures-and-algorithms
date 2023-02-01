@@ -1,4 +1,4 @@
-package org.deafsapps.kpdatastructuresandalgorithms
+package org.deafsapps.kpdatastructuresandalgorithms.data_structures
 
 /**
  * A binary search tree imposes two rules on the binary tree:

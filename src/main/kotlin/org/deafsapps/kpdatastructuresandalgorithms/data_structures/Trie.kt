@@ -1,9 +1,9 @@
-package org.deafsapps.kpdatastructuresandalgorithms
+package org.deafsapps.kpdatastructuresandalgorithms.data_structures
 
-import org.deafsapps.kpdatastructuresandalgorithms.utils.collections
-import org.deafsapps.kpdatastructuresandalgorithms.utils.contains
-import org.deafsapps.kpdatastructuresandalgorithms.utils.insert
-import org.deafsapps.kpdatastructuresandalgorithms.utils.remove
+import org.deafsapps.kpdatastructuresandalgorithms.data_structures.utils.collections
+import org.deafsapps.kpdatastructuresandalgorithms.data_structures.utils.contains
+import org.deafsapps.kpdatastructuresandalgorithms.data_structures.utils.insert
+import org.deafsapps.kpdatastructuresandalgorithms.data_structures.utils.remove
 
 /**
  * The trie (pronounced try) is a tree that specializes in storing data that can be

@@ -1,4 +1,4 @@
-package org.deafsapps.kpdatastructuresandalgorithms
+package org.deafsapps.kpdatastructuresandalgorithms.data_structures
 
 import kotlin.math.max
 
@@ -92,18 +92,18 @@ class BinaryTree {
 
 fun main() {
     val zero: BinaryTree.Node<Int> = BinaryTree.Node(0)
-    val one: BinaryTree.Node<Int>  = BinaryTree.Node(1)
-    val five: BinaryTree.Node<Int>  = BinaryTree.Node(5)
-    val seven: BinaryTree.Node<Int>  = BinaryTree.Node(7)
-    val eight: BinaryTree.Node<Int>  = BinaryTree.Node(8)
-    val nine: BinaryTree.Node<Int>  = BinaryTree.Node(9)
+    val one: BinaryTree.Node<Int> = BinaryTree.Node(1)
+    val five: BinaryTree.Node<Int> = BinaryTree.Node(5)
+    val seven: BinaryTree.Node<Int> = BinaryTree.Node(7)
+    val eight: BinaryTree.Node<Int> = BinaryTree.Node(8)
+    val nine: BinaryTree.Node<Int> = BinaryTree.Node(9)
     seven.leftChild = one
     seven.rightChild = nine
     one.leftChild = zero
     one.rightChild = five
     nine.leftChild = eight
 
-    val tree: BinaryTree.Node<Int>  = seven
+    val tree: BinaryTree.Node<Int> = seven
 
     println(tree)
 

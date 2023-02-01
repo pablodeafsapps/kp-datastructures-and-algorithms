@@ -1,4 +1,4 @@
-package org.deafsapps.kpdatastructuresandalgorithms
+package org.deafsapps.kpdatastructuresandalgorithms.data_structures
 
 fun main(args: Array<String>) {
     println("Hello World!")

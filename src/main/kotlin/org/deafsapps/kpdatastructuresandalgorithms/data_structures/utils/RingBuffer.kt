@@ -28,7 +28,7 @@
  * THE SOFTWARE.
  */
 
-package org.deafsapps.kpdatastructuresandalgorithms.utils
+package org.deafsapps.kpdatastructuresandalgorithms.data_structures.utils
 
 class RingBuffer<T>(private val size: Int) {
 

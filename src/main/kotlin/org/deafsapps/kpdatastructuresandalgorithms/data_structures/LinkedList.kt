@@ -1,4 +1,4 @@
-package org.deafsapps.kpdatastructuresandalgorithms
+package org.deafsapps.kpdatastructuresandalgorithms.data_structures
 
 /**
  * A linked list is a collection of values arranged in a linear, unidirectional sequence. A linked list has several

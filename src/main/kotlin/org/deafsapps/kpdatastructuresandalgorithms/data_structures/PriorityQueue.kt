@@ -1,6 +1,5 @@
-package org.deafsapps.kpdatastructuresandalgorithms
+package org.deafsapps.kpdatastructuresandalgorithms.data_structures
 
-import java.util.*
 import kotlin.Comparator
 import kotlin.collections.ArrayList
 
@@ -113,7 +112,7 @@ fun main() {
         val length2: Int = o2?.length ?: -1
         length1 - length2
     }
-    val priorityQueue2: AbstractPriorityQueue<String>  = ComparatorPriorityQueueImpl(comparator = stringLengthComparator)
+    val priorityQueue2: AbstractPriorityQueue<String> = ComparatorPriorityQueueImpl(comparator = stringLengthComparator)
     arrayListOf("one", "two", "three", "four", "five", "six", "seven", "eight", "nine").forEach {
         priorityQueue2.enqueue(element = it)
     }

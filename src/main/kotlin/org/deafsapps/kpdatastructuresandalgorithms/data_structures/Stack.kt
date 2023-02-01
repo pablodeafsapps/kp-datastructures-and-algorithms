@@ -1,4 +1,4 @@
-package org.deafsapps.kpdatastructuresandalgorithms
+package org.deafsapps.kpdatastructuresandalgorithms.data_structures
 
 /**
  * The stack data structure is identical, in concept, to a physical stack of objects. When you add an item to a stack,
