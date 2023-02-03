@@ -33,7 +33,7 @@ fun main() {
     val search31: Int = array.indexOf(31)
     val binarySearch31: Int? = array.binarySearch(31)
 
-    println("idexOf(): $search31")
+    println("indexOf(): $search31")
     println("binarySearch(): $binarySearch31")
 
 }
