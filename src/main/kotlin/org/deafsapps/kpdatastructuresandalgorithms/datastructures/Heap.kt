@@ -1,4 +1,4 @@
-package org.deafsapps.kpdatastructuresandalgorithms.data_structures
+package org.deafsapps.kpdatastructuresandalgorithms.datastructures
 
 import java.util.Collections
 import kotlin.collections.ArrayList

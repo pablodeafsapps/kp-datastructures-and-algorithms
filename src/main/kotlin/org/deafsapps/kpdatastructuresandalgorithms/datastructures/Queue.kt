@@ -1,7 +1,7 @@
-package org.deafsapps.kpdatastructuresandalgorithms.data_structures
+package org.deafsapps.kpdatastructuresandalgorithms.datastructures
 
-import org.deafsapps.kpdatastructuresandalgorithms.data_structures.utils.DoublyLinkedList
-import org.deafsapps.kpdatastructuresandalgorithms.data_structures.utils.RingBuffer
+import org.deafsapps.kpdatastructuresandalgorithms.datastructures.utils.DoublyLinkedList
+import org.deafsapps.kpdatastructuresandalgorithms.datastructures.utils.RingBuffer
 
 /**
  * Queues use FIFO or first in, first out ordering, meaning the first element that was added will always be the first

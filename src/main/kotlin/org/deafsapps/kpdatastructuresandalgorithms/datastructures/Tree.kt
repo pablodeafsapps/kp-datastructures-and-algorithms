@@ -1,4 +1,4 @@
-package org.deafsapps.kpdatastructuresandalgorithms.data_structures
+package org.deafsapps.kpdatastructuresandalgorithms.datastructures
 
 typealias tVisitor<T> = (Tree.Node<T>) -> Unit
 

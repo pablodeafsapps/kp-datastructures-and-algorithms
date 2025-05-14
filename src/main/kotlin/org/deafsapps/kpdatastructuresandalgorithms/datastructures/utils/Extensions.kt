@@ -1,6 +1,6 @@
-package org.deafsapps.kpdatastructuresandalgorithms.data_structures.utils
+package org.deafsapps.kpdatastructuresandalgorithms.datastructures.utils
 
-import org.deafsapps.kpdatastructuresandalgorithms.data_structures.Trie
+import org.deafsapps.kpdatastructuresandalgorithms.datastructures.Trie
 
 fun Trie<Char>.insert(string: String) {
     insert(string.toList())

@@ -28,7 +28,7 @@
  * THE SOFTWARE.
  */
 
-package org.deafsapps.kpdatastructuresandalgorithms.data_structures.utils
+package org.deafsapps.kpdatastructuresandalgorithms.datastructures.utils
 
 class DoublyLinkedList<T : Any> {
 
