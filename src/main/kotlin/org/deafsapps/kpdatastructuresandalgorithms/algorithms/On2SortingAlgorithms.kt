@@ -98,7 +98,7 @@ fun <T : Comparable<T>> MutableList<T>.insertionSort(
     // Iterates from left to right, not including the first element (nothing to compare it with)
     for (current in 1 until this.size) {
         // Run backward from the current index so that you can shift left as needed
-        for (shifting in (1..current).reversed()) {
+        for (shifting in current downTo 1) {
             if (this[shifting] < this[shifting - 1]) {
                 swapAt(first = shifting, shifting - 1)
             } else {
@@ -137,15 +137,20 @@ fun main() {
     val sampleList3 = arrayListOf(9, 4, 10, 3)
     val sampleList4 = arrayListOf(9, 4, 10, 3)
     val sampleList5 = arrayListOf(9, 4, 10, 3)
-    println("Original: $sampleList")
+    println("Original:\n$sampleList")
     // BubbleSort1 example
-    println("Bubble sorted (1): ${sampleList1.bubbleSort1(showPasses = true)}")
+    println("Bubble sorted (1):")
+    println(sampleList1.bubbleSort1(showPasses = true))
     // BubbleSort2 example
-    println("Bubble sorted (2): ${sampleList2.bubbleSort2(showPasses = true)}")
+    println("Bubble sorted (2):")
+    println(sampleList2.bubbleSort2(showPasses = true))
     // SelectionSort example
-    println("Selection sorted: ${sampleList3.selectionSort(showPasses = true)}")
+    println("Selection sorted:")
+    println(sampleList3.selectionSort(showPasses = true))
     // InsertionSort example
-    println("Insertion sorted: ${sampleList4.insertionSort(showPasses = true)}")
+    println("Insertion sorted:")
+    println(sampleList4.insertionSort(showPasses = true))
     // Reverse example
-    println("Reverse: ${sampleList5.reverse()}")
+    println("Reverse:")
+    println(sampleList5.reverse())
 }

@@ -8,7 +8,6 @@ package org.deafsapps.kpdatastructuresandalgorithms.algorithms
  * - The collection must be able to perform index manipulation in constant time.
  * - The collection must be sorted.
  */
-
 fun <T : Comparable<T>> ArrayList<T>.binarySearch(
     value: T,
     range: IntRange = indices
@@ -28,12 +27,10 @@ fun <T : Comparable<T>> ArrayList<T>.binarySearch(
 }
 
 fun main() {
-
     val array: ArrayList<Int> = arrayListOf(1, 5, 15, 17, 19, 22, 24, 31, 105, 150)
     val search31: Int = array.indexOf(31)
     val binarySearch31: Int? = array.binarySearch(31)
 
     println("indexOf(): $search31")
     println("binarySearch(): $binarySearch31")
-
 }
